@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import GoogleMaps;  //追記
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let cGoogleMapsAPIKey = "AIzaSyDUXjUaZRTtSMRUzn3ImJBJBVpmUyddzIw"  //追記
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Google Mapsの初期設定
+        GMSServices.provideAPIKey(cGoogleMapsAPIKey) //追記
         return true
     }
 
