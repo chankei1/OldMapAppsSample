@@ -62,44 +62,101 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         marker.map = googleMap
         
         /*
-        ここからmapの調節で使用するマーカー
+        惣構のピン作成
         */
-        let l2: CLLocationDegrees = 36.571837
-        let lo2: CLLocationDegrees = 136.657223
-        let m2: GMSMarker = GMSMarker()
-        m2.position = CLLocationCoordinate2DMake(l2, lo2)
-        m2.map = googleMap
+        //金沢東別院北側(西外惣構)
+        let westOutsideFenceLatitude: CLLocationDegrees = 36.575348
+        let westOutsideFenceLongitude: CLLocationDegrees = 136.654999
+        let westOutsideFence: GMSMarker = GMSMarker()
+        westOutsideFence.position = CLLocationCoordinate2DMake(westOutsideFenceLatitude, westOutsideFenceLongitude)
+        westOutsideFence.map = googleMap
         
-        let l3: CLLocationDegrees = 36.572669
-        let lo3: CLLocationDegrees = 136.658648
-        let m3: GMSMarker = GMSMarker()
-        m3.position = CLLocationCoordinate2DMake(l3, lo3)
-        m3.map = googleMap
-        
-        let l4: CLLocationDegrees = 36.572326
-        let lo4: CLLocationDegrees = 136.661357
-        let m4: GMSMarker = GMSMarker()
-        m4.position = CLLocationCoordinate2DMake(l4, lo4)
-        m4.map = googleMap
-        
-        let l5: CLLocationDegrees = 36.560295
-        let lo5: CLLocationDegrees = 136.656937
-        let m5: GMSMarker = GMSMarker()
-        m5.position = CLLocationCoordinate2DMake(l5, lo5)
-        m5.map = googleMap
+        //升形
+        let masugataLatitude: CLLocationDegrees = 36.573454
+        let masugataLongitude: CLLocationDegrees = 136.653790
+        let masugata: GMSMarker = GMSMarker()
+        masugata.position = CLLocationCoordinate2DMake(masugataLatitude, masugataLongitude)
+        masugata.map = googleMap
 
-        let l6: CLLocationDegrees = 36.565506
-        let lo6: CLLocationDegrees = 136.665878
-        let m6: GMSMarker = GMSMarker()
-        m6.position = CLLocationCoordinate2DMake(l6, lo6)
-        m6.map = googleMap
+        //西外惣構跡(武蔵町地点)
+        let MusashimachiLatitude: CLLocationDegrees = 36.572017
+        let MusashimachiLongitude: CLLocationDegrees = 136.652761
+        let westOutsideMusashimachi: GMSMarker = GMSMarker()
+        westOutsideMusashimachi.position = CLLocationCoordinate2DMake(MusashimachiLatitude, MusashimachiLongitude)
+        westOutsideMusashimachi.map = googleMap
+
+        //香林坊2丁目街園(西外惣構)
+        let westOutsideKorinboLatitude: CLLocationDegrees = 36.566762
+        let westOutsideKorinboLongitude: CLLocationDegrees = 136.651079
+        let westOutsideKorinbo: GMSMarker = GMSMarker()
+        westOutsideKorinbo.position = CLLocationCoordinate2DMake(westOutsideKorinboLatitude, westOutsideKorinboLongitude)
+        westOutsideKorinbo.map = googleMap
+
+        //香林坊~長町_せせらぎ通り(西外惣構)
+        let seseragiLatitude: CLLocationDegrees = 36.562382
+        let seseragiLongitude: CLLocationDegrees = 136.652815
+        let westOutsideSeseragi: GMSMarker = GMSMarker()
+        westOutsideSeseragi.position = CLLocationCoordinate2DMake(seseragiLatitude, seseragiLongitude)
+        westOutsideSeseragi.map = googleMap
+        
+        //宮内橋詰遺構(西外惣構)
+        let kunaiLatitude: CLLocationDegrees = 36.560830
+        let kunaiLongitude: CLLocationDegrees = 136.656103
+        let westOutsideKunai: GMSMarker = GMSMarker()
+        westOutsideKunai.position = CLLocationCoordinate2DMake(kunaiLatitude, kunaiLongitude)
+        westOutsideKunai.map = googleMap
+        
+        //金沢21世紀美術館南側(西外惣構)
+        let kanazawa21biLatitude: CLLocationDegrees = 36.560301
+        let kanazawa21biLongitude: CLLocationDegrees = 136.657438
+        let westOutside21bi: GMSMarker = GMSMarker()
+        westOutside21bi.position = CLLocationCoordinate2DMake(kanazawa21biLatitude, kanazawa21biLongitude)
+        westOutside21bi.map = googleMap
+        
+        //広坂遺跡
+        let hirosakaRuinsLatitude: CLLocationDegrees = 36.560278
+        let hirosakaRuinsLongitude: CLLocationDegrees = 136.658553
+        let hirosakaRuins: GMSMarker = GMSMarker()
+        hirosakaRuins.position = CLLocationCoordinate2DMake(hirosakaRuinsLatitude, hirosakaRuinsLongitude)
+        hirosakaRuins.map = googleMap
+        
+        //兼六園_山崎山(東外惣構)
+        let eastKenrokuenLatitude: CLLocationDegrees = 36.561623
+        let eastKenrokuenLongitude: CLLocationDegrees = 136.664208
+        let eastKenrokuen: GMSMarker = GMSMarker()
+        eastKenrokuen.position = CLLocationCoordinate2DMake(eastKenrokuenLatitude, eastKenrokuenLongitude)
+        eastKenrokuen.map = googleMap
+        
+        //東兼六町(東外惣構)
+        let eastKenrokumachiLatitude: CLLocationDegrees = 36.562846
+        let eastKenrokumachiLongitude: CLLocationDegrees = 136.667692
+        let eastKenrokumachi: GMSMarker = GMSMarker()
+        eastKenrokumachi.position = CLLocationCoordinate2DMake(eastKenrokumachiLatitude, eastKenrokumachiLongitude)
+        eastKenrokumachi.map = googleMap
+
         
         
-        let L1C1_la: CLLocationDegrees = 36.577517
-        let L1C1_lo: CLLocationDegrees = 136.649726
-        let MapL1C1: GMSMarker = GMSMarker()
-        MapL1C1.position = CLLocationCoordinate2DMake(L1C1_la, L1C1_lo)
-        MapL1C1.map = googleMap
+        let a: CLLocationDegrees = 36.565057
+        let b: CLLocationDegrees = 136.665744
+        let aa: GMSMarker = GMSMarker()
+        aa.position = CLLocationCoordinate2DMake(a, b)
+        aa.map = googleMap
+        
+        let qq: CLLocationDegrees = 36.571394
+        let w: CLLocationDegrees = 136.663659
+        let qqq: GMSMarker = GMSMarker()
+        qqq.position = CLLocationCoordinate2DMake(qq, w)
+        qqq.map = googleMap
+
+        
+        let f: CLLocationDegrees = 36.572859
+        let ff: CLLocationDegrees = 136.662629
+        let vv: GMSMarker = GMSMarker()
+        vv.position = CLLocationCoordinate2DMake(f, ff)
+        vv.map = googleMap
+
+        
+        
         
         
         //古地図の表示
@@ -118,7 +175,7 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         
         var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
         
-        var icon = UIImage(named: "map.png")
+        var icon = UIImage(named: "map2.png")
         
         //mapプロパティにGMSMapViewをセットする
         overlay = GMSGroundOverlay(bounds: overlayBounds, icon: icon)

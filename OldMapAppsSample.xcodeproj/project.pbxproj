@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18254C831C1A4207004BDBC1 /* map2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18254C821C1A4207004BDBC1 /* map2.png */; };
 		186BE66F1C19FE6D007B58BC /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 186BE66E1C19FE6D007B58BC /* map.png */; };
 		18E598EF1BE63A9700CFD751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E598EE1BE63A9700CFD751 /* AppDelegate.swift */; };
 		18E598F11BE63A9700CFD751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E598F01BE63A9700CFD751 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		15F9D05D231CCFB180AE1BE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		18254C821C1A4207004BDBC1 /* map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map2.png; sourceTree = "<group>"; };
 		186BE66E1C19FE6D007B58BC /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		18E598EB1BE63A9700CFD751 /* OldMapAppsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldMapAppsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E598EE1BE63A9700CFD751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		181450361BE8ABC0003CEBB1 /* image_file */ = {
 			isa = PBXGroup;
 			children = (
+				18254C821C1A4207004BDBC1 /* map2.png */,
 				186BE66E1C19FE6D007B58BC /* map.png */,
 			);
 			name = image_file;
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E598F91BE63A9700CFD751 /* LaunchScreen.storyboard in Resources */,
+				18254C831C1A4207004BDBC1 /* map2.png in Resources */,
 				18E598F61BE63A9700CFD751 /* Assets.xcassets in Resources */,
 				186BE66F1C19FE6D007B58BC /* map.png in Resources */,
 				18E598F41BE63A9700CFD751 /* Main.storyboard in Resources */,
