@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181450381BE8AC31003CEBB1 /* kanazawa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 181450371BE8AC31003CEBB1 /* kanazawa.jpg */; };
-		1814503A1BE8C7B7003CEBB1 /* newark_nj_1922.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 181450391BE8C7B7003CEBB1 /* newark_nj_1922.jpg */; };
-		1814503C1BE8CAD3003CEBB1 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1814503B1BE8CAD3003CEBB1 /* sample.jpg */; };
+		186BE66F1C19FE6D007B58BC /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 186BE66E1C19FE6D007B58BC /* map.png */; };
 		18E598EF1BE63A9700CFD751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E598EE1BE63A9700CFD751 /* AppDelegate.swift */; };
 		18E598F11BE63A9700CFD751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E598F01BE63A9700CFD751 /* ViewController.swift */; };
 		18E598F41BE63A9700CFD751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E598F21BE63A9700CFD751 /* Main.storyboard */; };
@@ -39,9 +37,7 @@
 
 /* Begin PBXFileReference section */
 		15F9D05D231CCFB180AE1BE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		181450371BE8AC31003CEBB1 /* kanazawa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kanazawa.jpg; sourceTree = "<group>"; };
-		181450391BE8C7B7003CEBB1 /* newark_nj_1922.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newark_nj_1922.jpg; sourceTree = "<group>"; };
-		1814503B1BE8CAD3003CEBB1 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		186BE66E1C19FE6D007B58BC /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		18E598EB1BE63A9700CFD751 /* OldMapAppsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldMapAppsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E598EE1BE63A9700CFD751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E598F01BE63A9700CFD751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,9 +84,7 @@
 		181450361BE8ABC0003CEBB1 /* image_file */ = {
 			isa = PBXGroup;
 			children = (
-				1814503B1BE8CAD3003CEBB1 /* sample.jpg */,
-				181450391BE8C7B7003CEBB1 /* newark_nj_1922.jpg */,
-				181450371BE8AC31003CEBB1 /* kanazawa.jpg */,
+				186BE66E1C19FE6D007B58BC /* map.png */,
 			);
 			name = image_file;
 			sourceTree = "<group>";
@@ -273,11 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1814503A1BE8C7B7003CEBB1 /* newark_nj_1922.jpg in Resources */,
-				1814503C1BE8CAD3003CEBB1 /* sample.jpg in Resources */,
 				18E598F91BE63A9700CFD751 /* LaunchScreen.storyboard in Resources */,
 				18E598F61BE63A9700CFD751 /* Assets.xcassets in Resources */,
-				181450381BE8AC31003CEBB1 /* kanazawa.jpg in Resources */,
+				186BE66F1C19FE6D007B58BC /* map.png in Resources */,
 				18E598F41BE63A9700CFD751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,11 +485,14 @@
 			baseConfigurationReference = 15F9D05D231CCFB180AE1BE0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OldMapAppsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobakei.OldMapAppsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -506,11 +501,14 @@
 			baseConfigurationReference = 66156C7A13AB902E31B2CAC0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OldMapAppsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobakei.OldMapAppsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
