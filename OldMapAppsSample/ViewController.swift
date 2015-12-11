@@ -13,10 +13,13 @@ class ViewController: UIViewController,GMSMapViewDelegate {
 
     var googleMap : GMSMapView!
     
-    //緯度経度 -> 香林坊
-    let lat: CLLocationDegrees = 36.562466
-    let lon: CLLocationDegrees = 136.653596
+//    //緯度経度 -> 香林坊  36.566220, 136.659704
+//    let lat: CLLocationDegrees = 36.562466
+//    let lon: CLLocationDegrees = 136.653596
 
+    //緯度経度 -> 金沢城内
+    let lat: CLLocationDegrees = 36.566220
+    let lon: CLLocationDegrees = 136.659704
     
     //切り替えボタンの作成
     let chengeButton: UIButton = UIButton()
@@ -57,9 +60,9 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         googleMap.camera = camera
         
         //マーカーの作成
-        let marker: GMSMarker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(lat, lon)
-        marker.map = googleMap
+//        let marker: GMSMarker = GMSMarker()
+//        marker.position = CLLocationCoordinate2DMake(lat, lon)
+//        marker.map = googleMap
         
         /*
         惣構のピン作成
@@ -133,27 +136,50 @@ class ViewController: UIViewController,GMSMapViewDelegate {
         let eastKenrokumachi: GMSMarker = GMSMarker()
         eastKenrokumachi.position = CLLocationCoordinate2DMake(eastKenrokumachiLatitude, eastKenrokumachiLongitude)
         eastKenrokumachi.map = googleMap
+        
+        //小将町中学校東側(東内惣構)
+        let kosyoCityLatitude: CLLocationDegrees = 36.565057
+        let kosyoCityLongitude: CLLocationDegrees = 136.665744
+        let kosyoCity: GMSMarker = GMSMarker()
+        kosyoCity.position = CLLocationCoordinate2DMake(kosyoCityLatitude, kosyoCityLongitude)
+        kosyoCity.map = googleMap
+        
+        
+        //橋場_枯木橋_東内惣構
+        let karekiBridgeLatitude: CLLocationDegrees = 36.570637
+        let karekiBridgeLongitude: CLLocationDegrees = 136.663729
+        let karekiBridge: GMSMarker = GMSMarker()
+        karekiBridge.position = CLLocationCoordinate2DMake(karekiBridgeLatitude, karekiBridgeLongitude)
+        karekiBridge.map = googleMap
+        
+        //東内惣構跡_枯木橋詰遺構
+        let karekiBridgeEastLatitude: CLLocationDegrees = 36.571394
+        let karekiBridgeEastLongitude: CLLocationDegrees = 136.663659
+        let karekiBridgeEast: GMSMarker = GMSMarker()
+        karekiBridgeEast.position = CLLocationCoordinate2DMake(karekiBridgeEastLatitude, karekiBridgeEastLongitude)
+        karekiBridgeEast.map = googleMap
 
+        //尾山神社前(西内惣構)
+        let oyamaShrineLatitude: CLLocationDegrees = 36.566186
+        let oyamaShrineLongitude: CLLocationDegrees = 136.654478
+        let oyamaShrine: GMSMarker = GMSMarker()
+        oyamaShrine.position = CLLocationCoordinate2DMake(oyamaShrineLatitude, oyamaShrineLongitude)
+        oyamaShrine.map = googleMap
+        
+        //尾山神社南側(西内惣構)
+        let oyamaShrineSouthLatitude: CLLocationDegrees = 36.565132
+        let oyamaShrineSouthLongitude: CLLocationDegrees = 136.655791
+        let oyamaShrineSouth: GMSMarker = GMSMarker()
+        oyamaShrineSouth.position = CLLocationCoordinate2DMake(oyamaShrineSouthLatitude, oyamaShrineSouthLongitude)
+        oyamaShrineSouth.map = googleMap
         
         
-        let a: CLLocationDegrees = 36.565057
-        let b: CLLocationDegrees = 136.665744
-        let aa: GMSMarker = GMSMarker()
-        aa.position = CLLocationCoordinate2DMake(a, b)
-        aa.map = googleMap
-        
-        let qq: CLLocationDegrees = 36.571394
-        let w: CLLocationDegrees = 136.663659
-        let qqq: GMSMarker = GMSMarker()
-        qqq.position = CLLocationCoordinate2DMake(qq, w)
-        qqq.map = googleMap
-
-        
-        let f: CLLocationDegrees = 36.572859
-        let ff: CLLocationDegrees = 136.662629
-        let vv: GMSMarker = GMSMarker()
-        vv.position = CLLocationCoordinate2DMake(f, ff)
-        vv.map = googleMap
+        //主計町緑水苑(西内惣構)
+        let kazueCityLatitude: CLLocationDegrees = 36.572859
+        let kazueCityLongitude: CLLocationDegrees = 136.662629
+        let kazueCity: GMSMarker = GMSMarker()
+        kazueCity.position = CLLocationCoordinate2DMake(kazueCityLatitude, kazueCityLongitude)
+        kazueCity.map = googleMap
 
         
         

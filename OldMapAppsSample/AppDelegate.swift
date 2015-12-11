@@ -4,7 +4,7 @@
 //
 //  Created by Keisuke.K on 2015/11/01.
 //  Copyright © 2015年 Keisuke.K. All rights reserved.
-//
+//こっちで作業する
 
 import UIKit
 import GoogleMaps;  //追記
